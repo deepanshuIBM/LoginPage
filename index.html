@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .outerdiv {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://images.unsplash.com/photo-1488415032361-b7e238421f1b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-position: bottom;
+        background-size: cover;
+      }
+      .innerdiv {
+        background-color: transparent;
+        width: 350px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.566);
+        border-radius: 4px;
+        backdrop-filter: blur(5px);
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        gap: 20px;
+      }
+      .inputBox {
+        height: 35px;
+        border: 1px solid rgb(255, 255, 255, 0.566);
+        border-radius: 8px;
+        background-color: transparent;
+        outline: none;
+        padding: 0 10px;
+        color: white;
+      }
+      button {
+        height: 35px;
+        border-radius: 8px;
+        background-color: white;
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+        border: none;
+        transition: 1s;
+      }
+      button:hover{
+        cursor: pointer;
+        background-color: black;
+        color: white;
+      }
+      a {
+        color: white;
+        font-size: 14px;
+      }
+      ::placeholder {
+        color: white;
+      }
+
+      @media screen and (orientation: portrait) {
+        
+        .outerdiv {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://images.unsplash.com/photo-1516517988546-0e7453cd7bd0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-position: bottom;
+        background-size: cover;
+      }
+
+      .innerdiv {
+        background-color: rgba(0, 0, 0, 0.301);
+        width: 350px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.566);
+        border-radius: 4px;
+        backdrop-filter: blur(5px);
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outerdiv">
+      <div class="innerdiv">
+        <h1 style="width: 250px; text-align: center; color: white">Login In</h1>
+        <form action="">
+          <div style="display: flex; flex-direction: column; gap: 20px">
+            <input class="inputBox" type="email" placeholder="E-mail ID" />
+            <input class="inputBox" type="password" placeholder="Password" />
+          </div>
+          <a href="#">Forget?</a>
+          <button>Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
